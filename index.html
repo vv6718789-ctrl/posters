@@ -3,43 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descargas de Trípticos</title>
+    <title>Sabores Verdes</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #fefefe;
-            margin: 50px;
-        }
-        h1 {
-            color: #333;
-        }
-        ul {
-            list-style-type: none;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color: #FAFAF7;
+            margin: 0;
             padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
-        li {
-            margin: 15px 0;
-        }
-        a {
-            text-decoration: none;
+        header {
+            background-color: #97B770;
             color: white;
-            background-color: #007ACC;
-            padding: 10px 20px;
-            border-radius: 5px;
+            text-align: center;
+            padding: 1.5em 0;
+            font-size: 1.2em;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
-        a:hover {
-            background-color: #005A99;
+        nav {
+            background-color: #88A160;
+            padding: 0.8em;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        /* Botones de descarga */
+        .download-btn {
+            background-color: #4F5D2E;
+            color: white !important;
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin: 0 8px;
+            transition: background 0.3s ease;
+            display: inline-block;
+        }
+        .download-btn:hover {
+            background-color: #3a471f;
+            text-decoration: none;
+        }
+        main {
+            flex: 1;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .receta {
+            background-color: #B9D394;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .receta h2 {
+            color: #4F5D2E;
+        }
+        .receta img {
+            width: 50%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        footer {
+            text-align: center;
+            background-color: #97B770;
+            color: white;
+            padding: 10px 0;
+            margin-top: auto;
         }
     </style>
 </head>
 <body>
-    <h1>Descarga de Trípticos</h1>
-    <p>Haz clic en los enlaces para descargar los trípticos en PDF:</p>
-    <ul>
-        <li><a href="postercafe.pdf" download>Descargar Tríptico 1</a></li>
-        <li><a href="posterrojo.pdf" download>Descargar Tríptico 2</a></li>
-        <li><a href="posterverde.pdf" download>Descargar Tríptico 3</a></li>
-    </ul>
-</body>
 
+<header>
+    <h1>🍃 Sabores Verdes</h1>
+    <p>Recetas saludables y deliciosas</p>
+</header>
+
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#">Recetas</a>
+    <a href="#">Tips de cocina</a>
+    <a href="#">Contacto</a>
+    <!-- Botones de descarga -->
+    <a href="postercafe.pdf" download class="download-btn">📥 Póster Café</a>
+    <a href="posterrojo.pdf" download class="download-btn">📥 Póster Rojo</a>
+    <a href="posterverde.pdf" download class="download-btn">📥 Póster Verde</a>
+</nav>
+
+<main>
+    <div class="receta">
+        <h2>Ensalada de Quinoa y Vegetales</h2>
+        <img src="receta1.jpg" alt="Ensalada de quinoa y vegetales">
+        <p>Una ensalada fresca con quinoa, tomate cherry, pepino, aguacate y aderezo de limón.</p>
+    </div>
+
+    <div class="receta">
+        <h2>Sopa de Calabaza Cremosa</h2>
+        <img src="receta6.jpg" alt="Sopa de calabaza cremosa">
+        <p>Una receta suave y reconfortante ideal para días fríos, con un toque de jengibre.</p>
+    </div>
+
+    <div class="receta">
+        <h2>Pizza Vegetariana</h2>
+        <img src="receta4.jpg" alt="Pizza vegetariana">
+        <p>Pizza artesanal con base integral, vegetales frescos, queso mozzarella y salsa casera.</p>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Sabores Verdes - Recetas con amor</p>
+</footer>
+
+</body>
 </html>
+
+
+
+
+    
